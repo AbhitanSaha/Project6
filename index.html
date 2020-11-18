@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Family</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Joestars</h1>
+        <img id="yeetcannon"src="download.jpeg"onmouseover="change2()">
+        <br> <br> <br>
+        <p id="yeet"> Family Book</p>
+        <button id="fam" onmouseover="change()">Next</button>
+<script>
+    var names=["Jonathan","Joseph","Jotaro","Josuke"];
+    var imgs=["download(4).jpeg","download(1).jpeg","download.jpeg","download(3).jpeg"];
+    
+function change(){
+    var array1=""
+for (i=0; i<names.length;i++){
+    array1= array1 + names[i] + "<br>";
+}
+document.getElementById("yeet").innerHTML= array1;
+}
+function change2(){
+    var array2=""
+for (i=0; i<imgs.length;i++){
+    array2= array2 + imgs[i] + "<br>";
+}
+document.getElementById("yeetcannon").innerHTML= array2;
+}
+
+
+</script>
+    </body>
+    </html>
