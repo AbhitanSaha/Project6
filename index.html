@@ -4,29 +4,24 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1>Joestars</h1>
-        <img id="yeetcannon"src="download.jpeg"onmouseover="change2()">
+        <h1>Family Book</h1>
+        <img id="yeetcannon"src="download.jpeg"onmouseover="changes()">
         <br> <br> <br>
-        <p id="yeet"> Family Book</p>
-        <button id="fam" onmouseover="change()">Next</button>
+        <p id="yeet"> Joestars</p>
+        <button id="fam" onmouseover="changes()">Next</button>
 <script>
-    var names=["Jonathan","Joseph","Jotaro","Josuke"];
-    var imgs=["download(4).jpeg","download(1).jpeg","download.jpeg","download(3).jpeg"];
+    var names=["Joestars","Jonathan","Joseph","Jotaro","Josuke"];
+    var imgs=["download.jpeg","403764b5b5a99294e518d8527269254f.jpg","main-qimg-16564252c61831a298631ab551912016-pjlq.jpg","HD-wallpaper-jotaro-star-platinum-jotaro-kujo-jojo-bizarre-adventure-star-platinum.jpg","avatars-oSJLMFuPFT9hKbKx-ylFekw-t500x500.jpg"];
+    var i= 0
     
-function change(){
-    var array1=""
-for (i=0; i<names.length;i++){
-    array1= array1 + names[i] + "<br>";
-}
-document.getElementById("yeet").innerHTML= array1;
-}
-function change2(){
-    var array2=""
-for (i=0; i<imgs.length;i++){
-    array2= array2 + imgs[i] + "<br>";
-}
-document.getElementById("yeetcannon").innerHTML= array2;
-}
+    function changes(){
+        i= i+1;
+        document.getElementById("yeetcannon").src= imgs[i];
+        document.getElementById("yeetcannon").innerHTML= names[i];
+        if (i==4){
+            i=0;
+        }
+    }
 
 
 </script>
